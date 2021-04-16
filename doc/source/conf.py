@@ -29,7 +29,7 @@ sys.path.append(os.path.abspath('ext'))
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.intersphinx', 'sphinx.ext.todo',
               'sphinx.ext.coverage', 'sphinx.ext.ifconfig',
-              'sphinx.ext.extlinks', 'psdom']
+              'sphinx.ext.extlinks']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -203,7 +203,7 @@ html_static_path = ['_static']
 
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
-        '**': ['localtoc.html', 'sourcelink.html'],
+        '**': ['localtoc.html', 'sourcelink.html', 'searchbox.html', 'globaltoc.html'],
         'using/windows': ['windowssidebar.html'],
 }
 
